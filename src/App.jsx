@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Another from "./Another";
 import "./App.css";
+import Counter from "./Counter";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -48,42 +48,26 @@ function App() {
     setTodoinput(event.target.value);
   }
 
-  function decrement() {
-    setCount((prevCount) => prevCount - 1);
-  }
-
-  function increment() {
-    setCount((prevCount) => prevCount + 1);
-  }
-
   function deleteTodo(id) {
-   setTodos([...todos.filter(todo => todo.id !== id)]);
+    setTodos([...todos.filter((todo) => todo.id !== id)]);
   }
 
   return (
     <div className="App">
       <header className="App-header">
-        <Another name="vinay" />
-        <div className="div">
-          <span className="count">{count}</span>
-          <button onClick={decrement}>-</button>
-          <button onClick={increment}>+</button>
-        </div>
+        <Counter title="My Counter" />
+        <h2>To do List</h2>
         <form action="#" onSubmit={addTodo}>
-          <input
-            type="text"
-            value={todoInput}
-            onChange={handleInput}
-          />
+          <input type="text" value={todoInput} onChange={handleInput} placeholder="Add a new task" />
+          <button type="submit">Add Todo</button>
         </form>
 
         <ul>
           {todos.map((todo, index) => (
             <div className="flex" key={todo.id}>
+              <input type="checkbox" checked={todo.isComplete} />
               <li>{todo.title}</li>
-              <div className="div">
-                <button onClick={() => deleteTodo(todo.id)}>x</button>
-              </div>
+              <button onClick={() => deleteTodo(todo.id)}>x</button>
             </div>
           ))}
         </ul>
