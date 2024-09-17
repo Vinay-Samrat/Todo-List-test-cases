@@ -1,17 +1,8 @@
 # Todo-List-test-cases
 
 Todo List App with Test Cases
-This repository contains a simple Todo List Application built with [insert technology stack used, e.g., React, Angular, JavaScript, etc.], alongside a suite of unit and integration test cases to ensure the app's robustness.
+This repository contains a simple Todo List Application built with React Frameowrk and Tailwindcss, CSS, alongside a suite of unit and integration test cases to ensure the app's robustness.
 
-Table of Contents
-Overview
-Features
-Technology Stack
-Setup Instructions
-Running the Application
-Running Test Cases
-Contributing
-License
 Overview
 This Todo List App allows users to manage their daily tasks by creating, editing, and deleting to-dos. It’s designed to help improve productivity and keep track of tasks efficiently.
 
@@ -25,9 +16,10 @@ Edit existing tasks
 Filter tasks based on their completion status
 Responsive design for both desktop and mobile users
 Technology Stack
-Frontend: [React.js / Angular / Vue.js / insert frontend framework used]
-Testing Framework: [Jest / Mocha / Jasmine / insert testing library used]
-Styling: [CSS / SCSS / insert styling methods used]
+Frontend: Reactjs, Tailwindcss
+Testing Framework: Jest
+Styling: TailwindCss, CSS
+
 Setup Instructions
 Follow these instructions to set up the application on your local machine.
 
