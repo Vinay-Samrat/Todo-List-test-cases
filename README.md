@@ -1,5 +1,20 @@
 # Counter-App
+This repository features a simple Counter Component developed using React.js. Alongside the component, you’ll find a suite of unit tests that ensure its functionality and robustness. The component demonstrates basic React state management and includes comprehensive testing for various interactions.
+
+Overview
+The Counter Component is designed to increment and decrement a counter value. It serves as an example to understand state management in React and the importance of unit testing. The included test cases validate that the component behaves as expected, covering different user interactions.
+
+Features
+Initial Display: Shows the starting value of the counter.
+Increment Functionality: Allows users to increase the counter value.
+Decrement Functionality: Allows users to decrease the counter value.
+Technology Stack
+Frontend: React.js
+Testing Framework: Jest
+Styling: (Optional) TailwindCSS or CSS
+
     &
+    
 # Todo-List-test-cases
 
 Todo List App with Test Cases
